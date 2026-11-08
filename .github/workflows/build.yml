@@ -190,7 +190,7 @@ jobs:
           AACkgcQeAABncmFkbGUucHJvcGVydGllc1BLAQIUAxQAAAAIAOgJaF18D4TnrwAAAEsBAAAPAAAA
           AAAAAAAAAACkgTsfAABzZXR0aW5ncy5ncmFkbGVQSwUGAAAAAAcABwDeAQAAFyAAAAAA
           STEEL_SOURCE
-          unzip -q steel-project.zip
+          unzip -oq steel-project.zip
           test -f app/src/main/AndroidManifest.xml
 
       - name: Build Debug APK
