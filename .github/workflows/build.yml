@@ -191,6 +191,7 @@ jobs:
           AAAAAAAAAACkgTsfAABzZXR0aW5ncy5ncmFkbGVQSwUGAAAAAAcABwDeAQAAFyAAAAAA
           STEEL_SOURCE
           unzip -oq steel-project.zip
+          sed -i 's/setTextAllCaps(false)/setAllCaps(false)/g' app/src/main/java/com/steelcounter/ai/MainActivity.java
           test -f app/src/main/AndroidManifest.xml
 
       - name: Build Debug APK
